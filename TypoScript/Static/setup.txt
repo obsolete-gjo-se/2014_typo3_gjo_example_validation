@@ -1,8 +1,8 @@
-plugin.tx_gjoskeleton {
+plugin.tx_gjoexamplevalidation {
 	view {
-		templateRootPath = {$plugin.tx_gjoskeleton.view.templateRootPath}
-		partialRootPath = {$plugin.tx_gjoskeleton.view.partialRootPath}
-		layoutRootPath = {$plugin.tx_gjoskeleton.view.layoutRootPath}
+		templateRootPath = {$plugin.tx_gjoexamplevalidation.view.templateRootPath}
+		partialRootPath = {$plugin.tx_gjoexamplevalidation.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_gjoexamplevalidation.view.layoutRootPath}
 	}
 }
 

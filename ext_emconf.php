@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'gjo_skeleton',
-    'description' => 'gjo_skeleton',
+    'title' => 'gjo_example_validation',
+    'description' => 'gjo_example_validation',
     'category' => '',
     'author' => 'Gregory Jo',
     'author_email' => 'gregor.jo@gjo-se.com',
