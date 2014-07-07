@@ -12,8 +12,7 @@ return array(
             'label' => 'Label: alphanumeric',
             'config' => array(
                 'type' => 'input',
-//                'eval' => 'tx_gjoexamplevalidation_alphanumeric',
-                'eval' => 'tx_exampleextraevaluations_extraeval1',
+                'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\AlphanumericValidator',
             ),
         ),
     ),

@@ -17,6 +17,16 @@ class AlphanumericValidator extends AbstractValidator {
 		}
 	}
 
+    /**
+     * This function just return the field value as it is. No transforming,
+     * hashing will be done on server-side.
+     *
+     * @return string JavaScript code for evaluating the
+     */
+    public function returnFieldJS() {
+        return 'return value;';
+    }
+
 
     public function evaluateFieldValue($value, $is_in, &$set) {
 
@@ -25,7 +35,7 @@ class AlphanumericValidator extends AbstractValidator {
 //        if (!is_string($value) || preg_match('/^[\pL\d]*$/u', $value) !== 1) {
 //
 //        }
-        return $value . '[added by PHP aus NANAN]';
+        return $value . 'addedbyPHP';
     }
 
 
