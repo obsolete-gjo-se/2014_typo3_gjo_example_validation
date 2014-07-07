@@ -5,9 +5,9 @@ if (!defined ('TYPO3_MODE')) die ('Access denied.');
     'Gjo.' . $_EXTKEY,
     'Validation',
     array(
-        'Validation' => 'addForm'
+        'Validation' => 'findAll, show, addForm, add, updateForm, update, remove'
     ),
     array(
-        'Validation' => 'addForm'
+        'Validation' => 'findAll, show, addForm, add, updateForm, update, remove'
     )
 );

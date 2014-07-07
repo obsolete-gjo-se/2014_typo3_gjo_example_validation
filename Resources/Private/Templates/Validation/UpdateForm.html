@@ -1,0 +1,15 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <h3>Table: tx_gjoexamplevalidation_domain_model_validation</h3>
+
+    <f:form action="update" name="updateForm" object="{validation}" class="form-horizontal" additionalAttributes="{role: 'form'}">
+
+        <f:render partial="Validation/FormFields" arguments="{_all}" />
+
+        <f:form.submit value="Update DataType" />
+
+    </f:form>
+
+</f:section>
