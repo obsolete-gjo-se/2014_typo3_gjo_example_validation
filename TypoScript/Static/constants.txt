@@ -1,0 +1,7 @@
+plugin.tx_gjoexamplevalidation {
+	view {
+		templateRootPath = EXT:gjo_example_validation/Resources/Private/Templates/
+		partialRootPath = EXT:gjo_example_validation/Resources/Private/Partials/
+		layoutRootPath = EXT:gjo_example_validation/Resources/Private/Layouts/
+	}
+}
