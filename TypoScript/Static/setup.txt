@@ -1,0 +1,8 @@
+plugin.tx_gjoskeleton {
+	view {
+		templateRootPath = {$plugin.tx_gjoskeleton.view.templateRootPath}
+		partialRootPath = {$plugin.tx_gjoskeleton.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_gjoskeleton.view.layoutRootPath}
+	}
+}
+

@@ -1,0 +1,7 @@
+plugin.tx_gjoskeleton {
+	view {
+		templateRootPath = EXT:gjo_skeleton/Resources/Private/Templates/
+		partialRootPath = EXT:gjo_skeleton/Resources/Private/Partials/
+		layoutRootPath = EXT:gjo_skeleton/Resources/Private/Layouts/
+	}
+}
