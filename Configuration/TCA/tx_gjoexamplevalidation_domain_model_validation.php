@@ -5,15 +5,15 @@ return array(
     'ctrl' => array(
         'title' => 'Table: tx_gjoexamplevalidation_domain_model_validation',
         'iconfile' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extRelPath('gjo_example_validation') . 'Resources/Public/Icons/tx_gjoexamplevalidation_domain_model_validation.gif',
-        'label' => 'string_without_break',
+        'label' => 'alphanumeric',
     ),
     'columns' => array(
-        'string_without_break' => array(
-            'label' => 'Label: stringWithoutBreak',
+        'alphanumeric' => array(
+            'label' => 'Label: alphanumeric',
             'config' => array(
                 'type' => 'input',
-                'eval' => 'required',
-                'max' => '30',
+//                'eval' => 'tx_gjoexamplevalidation_alphanumeric',
+                'eval' => 'tx_exampleextraevaluations_extraeval1',
             ),
         ),
     ),
@@ -21,12 +21,12 @@ return array(
     'types' => array(
         '1' => array(
             'showitem' => '
-                string_without_break,
+                alphanumeric,
                 '),
     ),
 
     'interface' => array(
         'showRecordFieldList' => '
-            string_without_break,
+            alphanumeric,
             '),
 );
