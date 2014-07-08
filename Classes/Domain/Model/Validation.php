@@ -7,26 +7,25 @@ class Validation extends AbstractEntity
 {
     /**
      * @var string
-     * @validate NotEmpty
-     * @validate RegularExpression(regularExpression="/^.{1,30}$/u")
+     * @validate Gjo.GjoExampleValidation:Alphanumeric
      */
-    protected $stringWithoutBreak = '';
+    protected $alphanumeric = '';
 
     /**
-     * @param string $stringWithoutBreak
+     * @param string $alphanumeric
      * @return void
      */
-    public function setStringWithoutBreak($stringWithoutBreak)
+    public function setAlphanumeric($alphanumeric)
     {
-        $this->stringWithoutBreak = $stringWithoutBreak;
+        $this->alphanumeric = $alphanumeric;
     }
 
     /**
      * @return string
      */
-    public function getStringWithoutBreak()
+    public function getAlphanumeric()
     {
-        return $this->stringWithoutBreak;
+        return $this->alphanumeric;
     }
 
 }
