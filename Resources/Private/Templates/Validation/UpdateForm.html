@@ -8,7 +8,7 @@
 
     <f:form action="update" name="updateForm" object="{validation}" class="form-horizontal" additionalAttributes="{role: 'form'}">
 
-        <f:render partial="Validation/FormFields" arguments="{_all}" />
+        <f:render partial="Validation/FormFields" arguments="{form: 'updateForm'}"/>
 
         <f:form.submit value="Update DataType" />
 

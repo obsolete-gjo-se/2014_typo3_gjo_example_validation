@@ -8,7 +8,7 @@
 
     <f:form action="add" name="addForm" class="form-horizontal" additionalAttributes="{role: 'form'}">
 
-        <f:render partial="Validation/FormFields" arguments="{_all}" />
+        <f:render partial="Validation/FormFields" arguments="{form: 'addForm'}" />
 
         <f:form.submit value="Add DataType Example"/>
 

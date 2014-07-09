@@ -1,6 +1,28 @@
-<div class="form-group">
-    <label for="alphanumeric" class="col-sm-2 control-label" >alphanumeric</label>
-    <div class="col-sm-10">
-        <f:form.textfield name="alphanumeric" property="alphanumeric" class="form-control" />
+<f:form.validationResults for="{form}.alphanumeric">
+
+    <div class="form-group {f:if(condition: validationResults.flattenedErrors, then: ' has-error')}">
+
+        <div class="row">
+
+            <label class="control-label col-sm-2" for="alphanumeric">alphanumeric</label>
+
+            <div class="col-sm-10">
+                <f:form.textfield class="form-control" name="alphanumeric" property="alphanumeric"/>
+            </div>
+
+        </div>
+
+        <f:if condition="{validationResults.flattenedErrors}">
+            <div class="row">
+
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <f:render partial="Error" arguments="{form:'{form}.alphanumeric'}" />
+                </div>
+
+            </div>
+        </f:if>
+
     </div>
-</div>
+
+</f:form.validationResults>
