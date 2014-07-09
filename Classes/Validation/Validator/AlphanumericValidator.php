@@ -18,7 +18,7 @@ class AlphanumericValidator extends AbstractValidator
     public function isValid($value)
     {
         if (preg_match(self::REGEX_NOT_IN_WHITELIST, $value) === 1) {
-            $this->addError('Fehlermeldung - am besten aus LLL', self::ERROR_CODE);
+            $this->addError('Erlaubte Zeichen sind: a-z, deutsche Sonderzeichen, 0-9', self::ERROR_CODE);
         }
     }
 
