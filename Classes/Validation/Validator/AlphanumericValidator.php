@@ -7,6 +7,7 @@ class AlphanumericValidator extends AbstractValidator
 {
 
     const REGEX_NOT_IN_WHITELIST = '/[^a-zAZäöüÄÖÜß0-9]/';
+    const ERROR_CODE = 1404819258;
 
     /**
      * The given $value is valid if it is an alphanumeric string.
@@ -17,7 +18,7 @@ class AlphanumericValidator extends AbstractValidator
     public function isValid($value)
     {
         if (preg_match(self::REGEX_NOT_IN_WHITELIST, $value) === 1) {
-            $this->addError($this->translateErrorMessage('alphanumeric', 'gjo_example_validation'), 1404819258);
+            $this->addError('Fehlermeldung - am besten aus LLL', self::ERROR_CODE);
         }
     }
 
