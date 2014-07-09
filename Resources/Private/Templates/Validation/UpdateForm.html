@@ -4,6 +4,8 @@
 
     <h3>Table: tx_gjoexamplevalidation_domain_model_validation</h3>
 
+    <f:render partial="Error" arguments="{form:'updateForm'}" />
+
     <f:form action="update" name="updateForm" object="{validation}" class="form-horizontal" additionalAttributes="{role: 'form'}">
 
         <f:render partial="Validation/FormFields" arguments="{_all}" />
