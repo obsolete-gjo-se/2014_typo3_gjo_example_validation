@@ -12,14 +12,14 @@ return array(
             'label' => 'Label: alphanumeric',
             'config' => array(
                 'type' => 'input',
-                'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\AlphanumericValidator',
+                'eval' => 'Gjo_AlphanumericValidator',
             ),
         ),
         'not_empty' => array(
             'label' => 'Label: not_empty',
             'config' => array(
                 'type' => 'input',
-//                'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\NotEmptyValidator',
+                'eval' => 'required, Gjo\\GjoExampleValidation\\Validation\\Validator\\NotEmptyValidator',
             ),
         ),
     ),
