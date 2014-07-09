@@ -26,3 +26,32 @@
     </div>
 
 </f:form.validationResults>
+
+<f:form.validationResults for="{form}.notEmpty">
+
+    <div class="form-group {f:if(condition: validationResults.flattenedErrors, then: ' has-error')}">
+
+        <div class="row">
+
+            <label class="control-label col-sm-2" for="notEmpty">notEmpty</label>
+
+            <div class="col-sm-10">
+                <f:form.textfield class="form-control" name="notEmpty" property="notEmpty"/>
+            </div>
+
+        </div>
+
+        <f:if condition="{validationResults.flattenedErrors}">
+            <div class="row">
+
+                <div class="col-sm-2"></div>
+                <div class="col-sm-10">
+                    <f:render partial="Error" arguments="{form:'{form}.notEmpty'}" />
+                </div>
+
+            </div>
+        </f:if>
+
+    </div>
+
+</f:form.validationResults>

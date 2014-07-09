@@ -12,6 +12,12 @@ class Validation extends AbstractEntity
     protected $alphanumeric = '';
 
     /**
+     * @var string
+     *
+     */
+    protected $notEmpty = '';
+
+    /**
      * @param string $alphanumeric
      * @return void
      */
@@ -27,5 +33,24 @@ class Validation extends AbstractEntity
     {
         return $this->alphanumeric;
     }
+
+    /**
+     * @param mixed $notEmpty
+     * @return void
+     */
+    public function setNotEmpty($notEmpty)
+    {
+        $this->notEmpty = $notEmpty;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNotEmpty()
+    {
+        return $this->notEmpty;
+    }
+
+
 
 }

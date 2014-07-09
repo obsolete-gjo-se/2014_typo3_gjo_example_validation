@@ -15,17 +15,26 @@ return array(
                 'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\AlphanumericValidator',
             ),
         ),
+        'not_empty' => array(
+            'label' => 'Label: not_empty',
+            'config' => array(
+                'type' => 'input',
+//                'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\NotEmptyValidator',
+            ),
+        ),
     ),
 
     'types' => array(
         '1' => array(
             'showitem' => '
                 alphanumeric,
+                not_empty
                 '),
     ),
 
     'interface' => array(
         'showRecordFieldList' => '
             alphanumeric,
+            not_empty
             '),
 );
