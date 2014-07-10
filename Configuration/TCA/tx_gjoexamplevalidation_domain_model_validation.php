@@ -19,7 +19,7 @@ return array(
             'label' => 'Label: not_empty',
             'config' => array(
                 'type' => 'input',
-                'eval' => 'required, Gjo\\GjoExampleValidation\\Validation\\Validator\\NotEmptyValidator',
+                'eval' => 'required',
             ),
         ),
     ),

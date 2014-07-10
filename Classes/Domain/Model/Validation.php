@@ -13,7 +13,7 @@ class Validation extends AbstractEntity
 
     /**
      * @var string
-     *
+     * @validate Gjo.GjoExampleValidation:Required
      */
     protected $notEmpty = '';
 
