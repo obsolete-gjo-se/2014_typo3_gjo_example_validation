@@ -7,7 +7,6 @@ class AlphanumericValidator extends AbstractValidator
 {
 
     const REGEX_NOT_IN_WHITELIST = '/[^a-zAZäöüÄÖÜß0-9]/';
-    const ERROR_CODE = 1404819258;
 
     /**
      * The given $value is valid if it is an alphanumeric string.
@@ -18,7 +17,7 @@ class AlphanumericValidator extends AbstractValidator
     public function isValid($value)
     {
         if (preg_match(self::REGEX_NOT_IN_WHITELIST, $value) === 1) {
-            $this->addError('Erlaubte Zeichen sind: a-z, deutsche Sonderzeichen, 0-9', self::ERROR_CODE);
+            $this->addError('Erlaubte Zeichen sind: a-z, deutsche Sonderzeichen, 0-9', 1404819258);
         }
     }
 
