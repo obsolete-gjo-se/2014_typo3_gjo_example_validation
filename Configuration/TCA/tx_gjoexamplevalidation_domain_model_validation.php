@@ -12,7 +12,14 @@ return array(
             'label' => 'Label: alphanumeric',
             'config' => array(
                 'type' => 'input',
-                'eval' => 'Gjo\\GjoExampleValidation\\Validation\\Validator\\AlphanumericValidator',
+                'eval' => 'Gjo_AlphanumericValidator',
+            ),
+        ),
+        'not_empty' => array(
+            'label' => 'Label: not_empty',
+            'config' => array(
+                'type' => 'input',
+                'eval' => 'required',
             ),
         ),
     ),
@@ -21,11 +28,13 @@ return array(
         '1' => array(
             'showitem' => '
                 alphanumeric,
+                not_empty
                 '),
     ),
 
     'interface' => array(
         'showRecordFieldList' => '
             alphanumeric,
+            not_empty
             '),
 );
