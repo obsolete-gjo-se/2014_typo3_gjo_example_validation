@@ -22,19 +22,32 @@ return array(
                 'eval' => 'required',
             ),
         ),
+        'number_range' => array(
+            'label' => 'Label: not_empty',
+            'config' => array(
+                'type' => 'input',
+                'eval' => 'num', // | int
+                'range' => array(
+                    'lower' => 0,
+                    'upper' => 100
+                ),
+            ),
+        ),
     ),
 
     'types' => array(
         '1' => array(
             'showitem' => '
                 alphanumeric,
-                not_empty
+                not_empty,
+                number_range
                 '),
     ),
 
     'interface' => array(
         'showRecordFieldList' => '
             alphanumeric,
-            not_empty
+            not_empty,
+            number_range
             '),
 );

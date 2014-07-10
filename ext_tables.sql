@@ -3,6 +3,7 @@ CREATE TABLE tx_gjoexamplevalidation_domain_model_validation (
   pid int(11) NOT NULL DEFAULT '0',
   alphanumeric varchar(30) NOT NULL DEFAULT '',
   not_empty varchar(30) NOT NULL DEFAULT '',
+  number_range int(11) NOT NULL DEFAULT '0',
 
 
   PRIMARY KEY (uid),

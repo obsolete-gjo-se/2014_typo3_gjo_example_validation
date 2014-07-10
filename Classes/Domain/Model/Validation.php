@@ -18,6 +18,12 @@ class Validation extends AbstractEntity
     protected $notEmpty = '';
 
     /**
+     * @var int
+     * @validate Gjo.GjoExampleValidation:NumberRange(minimum=0, maximum=100)
+     */
+    protected $numberRange = 0;
+
+    /**
      * @param string $alphanumeric
      * @return void
      */
@@ -50,6 +56,25 @@ class Validation extends AbstractEntity
     {
         return $this->notEmpty;
     }
+
+    /**
+     * @param int $numberRange
+     * @return void
+     */
+    public function setNumberRange($numberRange)
+    {
+        $this->numberRange = $numberRange;
+    }
+
+    /**
+     * @return int
+     */
+    public function getNumberRange()
+    {
+        return $this->numberRange;
+    }
+
+
 
 
 
